@@ -28,7 +28,6 @@
 <img src="https://github.com/devicons/devicon/blob/master/icons/dotnetcore/dotnetcore-original.svg" title="ASP.NET" alt="ASP.NET" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original-wordmark.svg" title="Docker" alt="Docker" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/yaml/yaml-original.svg" title="YAML" alt="YAML" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/dockercompose/dockercompose-original.svg" title="Docker Compose" alt="Docker Compose" width="40" height="40"/>&nbsp;
 </p>
 
 ## 🚀 Mission: Code Exploration
