@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Luigi Timossi} \\ \vspace{1pt}
+    Serra Ricco', Genoa \\ \vspace{1pt}
+    \small \raisebox{-0.1\height} ~ \href{mailto:luigiestebant@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{luigiestebant@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/luigi-timossi-lurpigi/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/luigi-timossi-lurpigi}}  ~
+    \href{https://github.com/Lurpigi}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Lurpigi}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Genoa}{Sept. 2023 -- March 2026}
+      {Computer Science MSc - Computer Security and Engineering, 110 cum laude}{Genoa, Italy}
+    \resumeSubheading
+      {University of Genoa}{Sept. 2019 -- March 2023}
+      {Computer Science BSc - Computer Science, 105}{Genoa, Italy}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Binary Analysis
+                \item Digital Forensics
+                \item Internet of Things
+                \item Capstone Project
+                \item Machine Learning
+                \item Mobile Development
+                \item Decentralized Systems
+                \item Distributed Computing
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gruppo SIGLA}{September 2022 -- December 2022}
+      {Curricular internship}{Genoa, Italy}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack solution for managing and controlling electric vehicle charging stations}
+        \resumeItem{Implemented an SQL database following the OCPP protocol and a .NET backend for the API, with user and administrator login authentication}
+        \resumeItem{Frontend developed in Angular, using state management, events, and styling libraries such as PrimeNG}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {IREN}{June 2017 -- July 2018}
+      {School-work alternance}{Genoa, Italy}
+      \resumeItemListStart
+        \resumeItem{The project won first prize in the national “Storie di Alternanza” competition and was honored in Rome}
+        \resumeItem{Developed a series of static pages with games for "Città dei Bambini" of Genoa}
+        \resumeItem{Implemented the pages using HTML, CSS and Javascript}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Master’s Thesis: LLMs to rank Decompilers} $|$ \emph{Python, Ghidra, CUDA, Docker, Java, C++}}{Sept. 2025 -- March 2026}
+            \resumeItemListStart
+            \resumeItem{Conducted a full empirical study on LLM-based decompiler assessment, combining quantitative perplexity metrics with qualitative judge evaluations.}
+            \resumeItem{Created an automated pipeline to build a real-world benchmarking dataset from OSS-Fuzz projects for decompilation experiments.}
+            \resumeItem{Built a comparison framework to evaluate decompiler outputs pairwise against source code using both blind and source-aware LLM judging.}
+            \resumeItem{Implemented a Ghidra extension that sends decompiled function variants to an external LLM service and returns ranked outputs in the UI.}
+            \resumeItemListEnd
+        \vspace{-13pt}
+        \resumeProjectHeading
+          {\textbf{StudyBuds Platform} $|$ \emph{Flutter, Node.js, TypeScript, PostgreSQL, Vue, Docker}}{October 2024 -- February 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a cross-platform mobile application utilizing Flutter empowering university students to seamlessly find study buddies and form student groups.}
+            \resumeItem{Developed a scalable backend REST API with Node.js, Express,TypeScript, Sequelize ORM and PostgreSQL  }
+            \resumeItem{Integrated an academic SAML-based Single Sign-On and a custom Telegram bot for real-time notifications and group join links.}
+            \resumeItem{Built a streamlined, reactive administrative dashboard employing Vue 3, Vite}
+            \resumeItem{Architected the deployment utilizing Docker Compose, and Appium-driven environment for automated acceptance testing.}
+          \resumeItemListEnd
+        \vspace{-13pt}
+        \resumeProjectHeading
+          {\textbf{IoT Smart Parking System} $|$ \emph{Node.js, Nuxt.js, PostgreSQL, MQTT, Node-RED, Docker, Wokwi}}{June 2025 -- July 2025}
+          \resumeItemListStart
+            \resumeItem{Architected an end-to-end IoT platform for smart parking reservations to optimize urban mobility, utilizing a microservices architecture deployed via Docker Compose.}
+            \resumeItem{Developed a scalable backend REST API with Node.js, Express, and PostgreSQL to handle user authentication and reservations, paired with a Nuxt.js frontend featuring an interactive OpenLayers map.}
+            \resumeItem{Implemented real-time gateway-to-cloud communication utilizing an MQTT broker to exchange JSON-based telemetry, health checks, and actuator commands with Wokwi-simulated hardware and Node.js virtual devices.}
+            \resumeItem{Designed a real-time Node-RED dashboard to monitor the entire IoT ecosystem.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C/C++, TypeScript, JavaScript, SQL, HTML/CSS, PHP} \\
+     \textbf{Frameworks \& Libraries}{: Node.js, Flutter, Vue.js, Angular, .NET, Express, Nuxt.js} \\
+     \textbf{Tools \& Infrastructure}{: Docker, Git, CUDA, Linux, MQTT, Firebase, JUnit} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+
+%-----------INVOLVEMENT---------------
+
+%\section{Leadership / Extracurricular}
+%    \resumeSubHeadingListStart
+%        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%            \resumeItemListStart
+%                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%            \resumeItemListEnd
+%        
+%    \resumeSubHeadingListEnd
+
+
+\end{document}

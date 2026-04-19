@@ -1,0 +1,35 @@
+name: Build and Deploy LaTeX CV
+
+on:
+  push:
+    paths:
+      - "LaTeX/CV_Web.tex"
+  workflow_dispatch:
+
+jobs:
+  build_and_commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CV_Web.tex
+          working_directory: LaTeX/
+
+      - name: Move PDF to root directory
+        run: mv LaTeX/CV_Web.pdf ./CV_Web.pdf
+
+      - name: Commit and Push the generated PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(cv): auto-compile LaTeX to PDF [skip ci]"
+          file_pattern: "CV_Web.pdf"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
